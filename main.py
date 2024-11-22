@@ -19,6 +19,8 @@ def load_data():
         neighborhoods = pd.read_csv('neighbourhoods.csv')
         geojson = gpd.read_file('neighbourhoods.geojson')
         return listings, calendar, reviews, neighborhoods, geojson
+    except ImportError as e:
+        st.error(f"Error loading GeoPandas or Fiona modules: {e}")
     except Exception as e:
         st.error(f"Error loading data: {e}")
         return None, None, None, None, None
@@ -268,3 +270,6 @@ if listings is not None:
     )
 else:
     st.error("Data could not be loaded. Please check the data files and try again.")
+
+if __name__ == "__main__":
+    main()
