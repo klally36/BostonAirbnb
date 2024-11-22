@@ -4,3 +4,8 @@ matplotlib==3.7.1
 pydeck==0.8.1b0
 geopandas==0.13.2
 textblob==0.17.1
+fiona==1.8.22
+shapely==1.8.5.post1
+pyproj==3.4.0
+rtree==1.0.1
+gdal==3.4.1
