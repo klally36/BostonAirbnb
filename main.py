@@ -271,5 +271,3 @@ if listings is not None:
 else:
     st.error("Data could not be loaded. Please check the data files and try again.")
 
-if __name__ == "__main__":
-    main()
