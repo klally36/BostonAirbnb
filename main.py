@@ -1,3 +1,5 @@
+import os
+os.environ['GDAL_CONFIG'] = '/usr/bin/gdal-config'
 
 import streamlit as st
 import pandas as pd
